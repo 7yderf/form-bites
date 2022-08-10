@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <meta property="og:locale" content="en_US" />
+    <meta content="" name="keywords">
+    <meta name="" content="">
+    <meta name="author" content="">
+    <meta content="" name="owner">
+    <link href="" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <script src="../js/slick.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+
+<body class="body" id="bodyContact">
+
+    <div class="form">
+        <form id="form-register">
+            <h2 class="form__title">Empieza a cambiar <span>tu vida hoy</span> </h2>
+
+            <div class="form__content">
+                <input type="text" id="txtName" name="name" placeholder="Nombre" required>
+
+                <input type="text" id="txtLastName" name="lastName" placeholder="Apellido" required>
+
+                <input type="tel" id="phone" name="phone" placeholder="Número Teléfonico" required
+                    minlength="10" maxlength="10" onfocusout="validatePhone()">
+
+                <div class="invalid" id="divPhoneValidation">Introduzca correctamente su número de teléfono</div>
+
+                <input type="email" id="txtEmail" name="email" placeholder="Correo Electronico" required
+                    onfocusout="validateEmail()">
+
+                <div class="invalid" id="divEmailValidation">Introduzca correctamente su correo electrónico</div>
+
+                <button id="btnContact" class="form__register" type="submit">Dame Acceso Ahora</button>
+
+                <p class="form__text-bottom">
+                    Recuerda contestar la llamada telefónica para recibir un bono de bienvenida.
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/phoneCode.js"></script>
+    <script src="./js/contact.js"></script>
+
+
+</body>
+
+</html>

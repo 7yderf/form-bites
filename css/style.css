@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  max-width: 350px;
+  border-radius: 5px;
+  border: 10px solid rgba(75, 175, 255, 0.71);
+  background: #fff;
+  padding: 20px;
+}
+.form__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form__title > span {
+  color: #5ba8e5;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 15px;
+}
+form input {
+  display: block;
+  outline: none;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 10px;
+  height: auto;
+}
+
+form input:focus {
+  border-color: #5ba8e5;
+  box-shadow: 0 0 0 0.2rem rgba(91, 168, 229, 0.25);
+}
+form label {
+  margin-bottom: -8px;
+}
+#divPhoneValidation,
+#divEmailValidation {
+  display: none;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.form__register {
+  box-sizing: border-box;
+  font-family: inherit;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  background-color: #f7931a;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+}
+
+.form__text-bottom{
+  font-size: 15px;
+    color: #454545;
+    font-weight: 700;
+    line-height: 1.4;
+}
